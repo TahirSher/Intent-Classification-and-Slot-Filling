@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+env/
+venv/
+.venv/
+
+# PyTorch (large files)
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Output folders
+output-*/
+output/
+logs/
+figures/
+checkpoints/
+
+# Data files
+*.csv
+*.json
+*.log
+*.txt
+best_hyperparameters.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# WandB
+wandb/
+
+# Optuna
+*.db
+*.sqlite3
+
+# Large model files
+*.model
