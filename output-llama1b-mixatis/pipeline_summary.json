@@ -1,0 +1,93 @@
+{
+  "stages_completed": [
+    "hpo",
+    "final_train_eval_test",
+    "unfreeze_sweeps",
+    "ablation",
+    "baselines",
+    "statistical_tests",
+    "sensitivity",
+    "rarity_validation",
+    "figures"
+  ],
+  "stages_failed": [
+    {
+      "stage": "layer_contribution",
+      "error": "[Errno 2] No such file or directory: './output-llama1b-mixatis/final_model/checkpoint.pth'"
+    },
+    {
+      "stage": "pareto",
+      "error": "[Errno 2] No such file or directory: './output-llama1b-mixatis/final_model/checkpoint.pth'"
+    },
+    {
+      "stage": "latency",
+      "error": "[Errno 2] No such file or directory: './output-llama1b-mixatis/final_model/checkpoint.pth'"
+    }
+  ],
+  "best_params": {
+    "unfrozen_ratio": 0.7566455605042577,
+    "intent_head_hidden": 64,
+    "slot_head_hidden": 256,
+    "dropout_rate": 0.22282845872753676,
+    "warmup_proportion": 0.03432125154649618,
+    "weight_decay": 2.7012557725439076e-05,
+    "loss_coef_intent": 0.5034282764658811,
+    "loss_coef_slot": 0.6630265895704371,
+    "intent_loss_fn": "bce",
+    "min_exit_layer": 13,
+    "ee_patience": 2,
+    "ee_patience_decay": 0.07697990982879299,
+    "tau_slot": 0.04383329786942253,
+    "intent_exit_margin": 0.09030532181350111,
+    "use_freq_exit": true,
+    "freq_smoothing": 0.6700633808593811,
+    "freq_min_count": 5,
+    "backbone_learning_rate": 0.00011103647313054615,
+    "learning_rate": 0.0007162786999897341,
+    "train_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "min_unfrozen_ratio_floor": 0.0
+  },
+  "final_test_results": {
+    "loss": 0.004216069342098681,
+    "intent_acc": 0.9965017491254373,
+    "intent_micro_f1": 0.9985416942860931,
+    "intent_micro_precision": 0.9981447124304267,
+    "intent_micro_recall": 0.9989389920424403,
+    "intent_macro_f1": 0.8987257625954653,
+    "intent_threshold_used": 0.75,
+    "slot_precision": 0.995754446356856,
+    "slot_recall": 0.9970128676470589,
+    "slot_f1": 0.996383259658993,
+    "mean_intent_slot": 0.9964425043922152,
+    "mean_f1": 0.9974624769725431,
+    "semantic_acc": 0.9770114942528736,
+    "mean_exit_layer": 14.544727325439453,
+    "std_exit_layer": 0.49811989068984985,
+    "pct_full_pass": 0.544727623462677,
+    "layer_savings_pct": 0.03035151163736982,
+    "balanced_score": 0.751306320740684
+  },
+  "rarity_validation": {
+    "pearson_r": -0.7500537797114515,
+    "pearson_p": 0.0,
+    "spearman_rho": -0.8625886504064801,
+    "spearman_p": 0.0,
+    "n": 2001,
+    "ci95_low": -0.7686118699441634,
+    "ci95_high": -0.7302342976480011,
+    "effect_size_r": -0.7500537797114515
+  },
+  "figures": {
+    "performance_vs_unfreeze": "./output-llama1b-mixatis/figures/01_performance_vs_unfreeze.png",
+    "layer_contribution": null,
+    "pareto_frontier": "./output-llama1b-mixatis/figures/03_pareto_frontier.png",
+    "sensitivity_heatmap": "./output-llama1b-mixatis/figures/04_sensitivity_heatmap.png",
+    "ablation_barchart": "./output-llama1b-mixatis/figures/05_ablation_barchart.png",
+    "learning_curves": "./output-llama1b-mixatis/figures/06_learning_curves.png",
+    "exit_distribution": "./output-llama1b-mixatis/figures/07_exit_distribution.png",
+    "significance_table": "./output-llama1b-mixatis/figures/08_significance_table.png",
+    "confusion_matrix": null,
+    "architecture": "./output-llama1b-mixatis/figures/10_architecture.png"
+  }
+}

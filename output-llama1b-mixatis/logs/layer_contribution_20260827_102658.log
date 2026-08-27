@@ -1,0 +1,62 @@
+08/27/2026 10:27:06 - INFO - datasets - TensorFlow version 2.20.0 available.
+08/27/2026 10:27:07 - INFO - __main__ - Loading 'chirunder/MixAtis_for_DecoderOnly' from HuggingFace Hub ...
+08/27/2026 10:27:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/chirunder/MixAtis_for_DecoderOnly/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+08/27/2026 10:27:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/chirunder/MixAtis_for_DecoderOnly/4460e93ca94bfb96840b706cb85682f91da86e14/README.md "HTTP/1.1 200 OK"
+08/27/2026 10:27:07 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/chirunder/MixAtis_for_DecoderOnly/resolve/4460e93ca94bfb96840b706cb85682f91da86e14/MixAtis_for_DecoderOnly.py "HTTP/1.1 404 Not Found"
+08/27/2026 10:27:08 - INFO - httpx - HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/chirunder/MixAtis_for_DecoderOnly/chirunder/MixAtis_for_DecoderOnly.py "HTTP/1.1 404 Not Found"
+08/27/2026 10:27:08 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/chirunder/MixAtis_for_DecoderOnly/revision/4460e93ca94bfb96840b706cb85682f91da86e14 "HTTP/1.1 200 OK"
+08/27/2026 10:27:08 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/chirunder/MixAtis_for_DecoderOnly/resolve/4460e93ca94bfb96840b706cb85682f91da86e14/.huggingface.yaml "HTTP/1.1 404 Not Found"
+08/27/2026 10:27:08 - INFO - httpx - HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=chirunder/MixAtis_for_DecoderOnly "HTTP/1.1 200 OK"
+08/27/2026 10:27:09 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/chirunder/MixAtis_for_DecoderOnly/tree/4460e93ca94bfb96840b706cb85682f91da86e14/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+08/27/2026 10:27:09 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/datasets/chirunder/MixAtis_for_DecoderOnly/tree/4460e93ca94bfb96840b706cb85682f91da86e14?recursive=false&expand=false "HTTP/1.1 200 OK"
+08/27/2026 10:27:09 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/datasets/chirunder/MixAtis_for_DecoderOnly/resolve/4460e93ca94bfb96840b706cb85682f91da86e14/dataset_infos.json "HTTP/1.1 404 Not Found"
+08/27/2026 10:27:09 - INFO - __main__ - ============================================================
+08/27/2026 10:27:09 - INFO - __main__ - Dataset columns  : ['prompt', 'completion', 'text']
+08/27/2026 10:27:09 - INFO - __main__ - Available splits : ['train']
+08/27/2026 10:27:09 - INFO - __main__ -   prompt               = 'sentence: list california airports , list la and how many canadian airlines international flights use aircraft 320\n<Inte'
+08/27/2026 10:27:09 - INFO - __main__ -   completion           = 'intents: atis_airport, atis_city, atis_quantity\nslot_labels: [B-state_name: california], [B-city_name: la], [B-airline_n'
+08/27/2026 10:27:09 - INFO - __main__ -   text                 = 'sentence: list california airports , list la and how many canadian airlines international flights use aircraft 320\n<Inte'
+08/27/2026 10:27:09 - INFO - __main__ - ============================================================
+08/27/2026 10:27:09 - INFO - __main__ - Format: instruction-tuning (prompt/completion).
+08/27/2026 10:27:09 - INFO - __main__ - No test split. Carving 10.0% of training as TEST.
+08/27/2026 10:27:09 - INFO - __main__ - After test carve: train=18002, test=2001
+08/27/2026 10:27:09 - INFO - __main__ - No dev split. Carving 10.0% of remaining training as DEV.
+08/27/2026 10:27:09 - INFO - __main__ - After dev carve: train=16201, dev=1801
+08/27/2026 10:27:09 - INFO - __main__ - ============================================================
+08/27/2026 10:27:09 - INFO - __main__ - FINAL SPLIT SIZES:  train=16201  dev=1801  test=2001
+08/27/2026 10:27:09 - INFO - __main__ - ============================================================
+08/27/2026 10:27:11 - INFO - __main__ - Label sets: 20 intents, 155 BIO slot tags (77 entity types).
+08/27/2026 10:27:11 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:11 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:12 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-1B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+08/27/2026 10:27:12 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-1B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+08/27/2026 10:27:14 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-1B "HTTP/1.1 200 OK"
+08/27/2026 10:27:14 - WARNING - __main__ - pad_token set to eos_token ('<|end_of_text|>').
+08/27/2026 10:27:15 - INFO - __main__ - Intent pos_weight (class-imbalance correction): min=7.53 max=50.00 mean=14.31 median=8.11 (clipped to [0.1, 50.0]); 3/20 classes hit the upper clip.
+08/27/2026 10:27:17 - INFO - __main__ - WordFrequencyIndex built: 827 unique words | max_freq=18654 | max_log_freq=9.834
+08/27/2026 10:27:17 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:18 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:18 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4896.87it/s]
+08/27/2026 10:27:18 - INFO - __main__ - Partial backbone unfreeze [position=none]: layers=[] TRAINABLE (0/16), rest FROZEN (embeddings frozen too). unfrozen_ratio=0.00.
+08/27/2026 10:27:18 - INFO - __main__ - Model: L=16  min_exit=8 (floor=8)  patience=3 (decay=0.50 min=1)  tau_intent=0.0500  tau_slot=0.1000  freq_adaptive_exit=False  exit_logit_smoothing=True  unfrozen_backbone_layers=0/16  trainable_params=11280112/1247094512 (0.90%)
+08/27/2026 10:27:19 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:19 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:19 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 5677.86it/s]
+08/27/2026 10:27:19 - INFO - __main__ - Partial backbone unfreeze [position=front]: layers=[0, 1, 2, 3, 4, 5, 6, 7] TRAINABLE (8/16), rest FROZEN (embeddings frozen too). unfrozen_ratio=0.50.
+08/27/2026 10:27:20 - INFO - __main__ - Model: L=16  min_exit=8 (floor=8)  patience=3 (decay=0.50 min=1)  tau_intent=0.0500  tau_slot=0.1000  freq_adaptive_exit=False  exit_logit_smoothing=True  unfrozen_backbone_layers=8/16  trainable_params=497852144/1247094512 (39.92%)
+08/27/2026 10:27:23 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:23 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:23 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3892.08it/s]
+08/27/2026 10:27:24 - INFO - __main__ - Partial backbone unfreeze [position=front]: layers=[0, 1, 2, 3, 4, 5, 6, 7] TRAINABLE (8/16), rest FROZEN (embeddings frozen too). unfrozen_ratio=0.50.
+08/27/2026 10:27:24 - INFO - __main__ - Model: L=16  min_exit=8 (floor=8)  patience=3 (decay=0.50 min=1)  tau_intent=0.0500  tau_slot=0.1000  freq_adaptive_exit=False  exit_logit_smoothing=True  unfrozen_backbone_layers=8/16  trainable_params=497852144/1247094512 (39.92%)
+08/27/2026 10:27:24 - INFO - __main__ - Intent loss = Asymmetric Loss (gamma_neg=4.00 gamma_pos=0.00 clip=0.050); pos_weight is still computed/logged above but NOT applied under ASL (ASL's own focusing + probability-shift already correct for imbalance). Pass --intent_loss_fn bce to use plain BCE+pos_weight instead.
+08/27/2026 10:27:24 - INFO - __main__ - Detected task modality: is_multi_label=True (used by the PABEE exit criterion; recomputed from data, not guessed).
+08/27/2026 10:27:24 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:25 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+08/27/2026 10:27:25 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 9238.97it/s]
+08/27/2026 10:27:25 - INFO - __main__ - Partial backbone unfreeze [position=front]: layers=[0, 1, 2, 3, 4, 5, 6, 7] TRAINABLE (8/16), rest FROZEN (embeddings frozen too). unfrozen_ratio=0.50.
+08/27/2026 10:27:25 - INFO - __main__ - Model: L=16  min_exit=8 (floor=8)  patience=3 (decay=0.50 min=1)  tau_intent=0.0500  tau_slot=0.1000  freq_adaptive_exit=False  exit_logit_smoothing=True  unfrozen_backbone_layers=8/16  trainable_params=497852144/1247094512 (39.92%)
