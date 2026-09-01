@@ -1,0 +1,7 @@
+experiment,cohens_d
+E1_no_freq_adaptive_exit,-0.7854986069182813
+E2_bce_instead_of_asl,0.0
+E3_no_depth_adaptive_patience,0.0
+E4_no_exit_logit_smoothing,-0.33266924135848785
+E5_fully_frozen_backbone,-113.58117676685671
+E6_single_task_exit,0.0

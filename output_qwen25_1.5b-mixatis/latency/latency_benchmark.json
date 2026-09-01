@@ -1,0 +1,14 @@
+{
+  "latency_ms_bs1": 53.52644866021971,
+  "throughput_bs1": 18.682352837340197,
+  "peak_mem_MB_bs1": 3044.44677734375,
+  "latency_ms_bs8": 89.54746772845586,
+  "throughput_bs8": 89.33809300179472,
+  "peak_mem_MB_bs8": 3123.3671875,
+  "latency_ms_bs16": 111.44617047781745,
+  "throughput_bs16": 143.5670685802944,
+  "peak_mem_MB_bs16": 3179.140625,
+  "latency_ms_bs32": 165.99781640494862,
+  "throughput_bs32": 192.77362011760798,
+  "peak_mem_MB_bs32": 3342.31982421875
+}

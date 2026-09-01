@@ -1,0 +1,20 @@
+{
+  "loss": 0.013262836126967322,
+  "intent_acc": 0.9996000799840032,
+  "intent_micro_f1": 0.999842594050055,
+  "intent_micro_precision": 0.9998950571938293,
+  "intent_micro_recall": 0.9997901364113326,
+  "intent_macro_f1": 0.777652511551728,
+  "intent_threshold_used": 0.35,
+  "slot_precision": 0.9680265501052291,
+  "slot_recall": 0.9750907089567451,
+  "slot_f1": 0.9715457887361131,
+  "mean_intent_slot": 0.9855729343600581,
+  "mean_f1": 0.9856941913930841,
+  "semantic_acc": 0.8570285942811438,
+  "mean_exit_layer": 14.948410034179688,
+  "std_exit_layer": 0.2212192863225937,
+  "pct_full_pass": 0.9484103322029114,
+  "layer_savings_pct": 0.003439331054687522,
+  "balanced_score": 0.7185691234633726
+}

@@ -1,0 +1,7 @@
+experiment,n,note
+E1_no_freq_adaptive_exit,3,n<2 seeds: significance test not computable
+E2_bce_instead_of_asl,3,n<2 seeds: significance test not computable
+E3_no_depth_adaptive_patience,3,n<2 seeds: significance test not computable
+E4_no_exit_logit_smoothing,3,n<2 seeds: significance test not computable
+E5_fully_frozen_backbone,3,n<2 seeds: significance test not computable
+E6_single_task_exit,3,n<2 seeds: significance test not computable
