@@ -1,0 +1,93 @@
+{
+  "stages_completed": [
+    "hpo",
+    "final_train_eval_test",
+    "unfreeze_sweeps",
+    "ablation",
+    "baselines",
+    "statistical_tests",
+    "sensitivity",
+    "rarity_validation",
+    "figures"
+  ],
+  "stages_failed": [
+    {
+      "stage": "layer_contribution",
+      "error": "[Errno 2] No such file or directory: './output_qwen25_1.5b-mixsnips/final_model/checkpoint.pth'"
+    },
+    {
+      "stage": "pareto",
+      "error": "[Errno 2] No such file or directory: './output_qwen25_1.5b-mixsnips/final_model/checkpoint.pth'"
+    },
+    {
+      "stage": "latency",
+      "error": "[Errno 2] No such file or directory: './output_qwen25_1.5b-mixsnips/final_model/checkpoint.pth'"
+    }
+  ],
+  "best_params": {
+    "unfrozen_ratio": 0.7566455605042577,
+    "intent_head_hidden": 64,
+    "slot_head_hidden": 256,
+    "dropout_rate": 0.22282845872753676,
+    "warmup_proportion": 0.03432125154649618,
+    "weight_decay": 2.7012557725439076e-05,
+    "loss_coef_intent": 0.5034282764658811,
+    "loss_coef_slot": 0.6630265895704371,
+    "intent_loss_fn": "bce",
+    "min_exit_layer": 22,
+    "ee_patience": 2,
+    "ee_patience_decay": 0.07697990982879299,
+    "tau_slot": 0.04383329786942253,
+    "intent_exit_margin": 0.09030532181350111,
+    "use_freq_exit": true,
+    "freq_smoothing": 0.6700633808593811,
+    "freq_min_count": 5,
+    "backbone_learning_rate": 0.00011103647313054615,
+    "learning_rate": 0.0007162786999897341,
+    "train_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "min_unfrozen_ratio_floor": 0.0
+  },
+  "final_test_results": {
+    "loss": 0.0029199722783162835,
+    "intent_acc": 0.9992001599680064,
+    "intent_micro_f1": 0.9997901584303851,
+    "intent_micro_precision": 0.9996852706672262,
+    "intent_micro_recall": 0.9998950682056663,
+    "intent_macro_f1": 0.7776135175828274,
+    "intent_threshold_used": 0.7999999999999999,
+    "slot_precision": 0.9974334949280971,
+    "slot_recall": 0.9981654368298748,
+    "slot_f1": 0.9977993316488711,
+    "mean_intent_slot": 0.9984997458084388,
+    "mean_f1": 0.9987947450396282,
+    "semantic_acc": 0.9864027194561088,
+    "mean_exit_layer": 26.393720626831055,
+    "std_exit_layer": 0.7491011619567871,
+    "pct_full_pass": 0.5230953693389893,
+    "layer_savings_pct": 0.022454791598849777,
+    "balanced_score": 0.7523529760412432
+  },
+  "rarity_validation": {
+    "pearson_r": -0.9176852728260697,
+    "pearson_p": 0.0,
+    "spearman_rho": -0.8959992282231916,
+    "spearman_p": 0.0,
+    "n": 5001,
+    "ci95_low": -0.9219519837376433,
+    "ci95_high": -0.9131958450577725,
+    "effect_size_r": -0.9176852728260697
+  },
+  "figures": {
+    "performance_vs_unfreeze": "./output_qwen25_1.5b-mixsnips/figures/01_performance_vs_unfreeze.png",
+    "layer_contribution": null,
+    "pareto_frontier": "./output_qwen25_1.5b-mixsnips/figures/03_pareto_frontier.png",
+    "sensitivity_heatmap": "./output_qwen25_1.5b-mixsnips/figures/04_sensitivity_heatmap.png",
+    "ablation_barchart": "./output_qwen25_1.5b-mixsnips/figures/05_ablation_barchart.png",
+    "learning_curves": "./output_qwen25_1.5b-mixsnips/figures/06_learning_curves.png",
+    "exit_distribution": "./output_qwen25_1.5b-mixsnips/figures/07_exit_distribution.png",
+    "significance_table": "./output_qwen25_1.5b-mixsnips/figures/08_significance_table.png",
+    "confusion_matrix": null,
+    "architecture": "./output_qwen25_1.5b-mixsnips/figures/10_architecture.png"
+  }
+}

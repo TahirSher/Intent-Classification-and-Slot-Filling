@@ -1,0 +1,7 @@
+{
+  "epoch": 3,
+  "global_step": 5060,
+  "loss": 0.003371144810991947,
+  "max_steps": 5060,
+  "num_train_epochs": 0
+}
